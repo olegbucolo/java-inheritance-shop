@@ -51,4 +51,13 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    @Override
+    public String toString() {
+        return "codice=" + codice +
+                ", nome='" + nome + '\'' +
+                ", marca='" + marca + '\'' +
+                ", prezzo=" + prezzo + '$' +
+                ", iva=" + iva;
+    }
+
 }

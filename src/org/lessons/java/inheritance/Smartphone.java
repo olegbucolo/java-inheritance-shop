@@ -26,4 +26,11 @@ public class Smartphone extends Prodotto {
     public void setAvailableMemory(int availableMemory) {
         this.availableMemory = availableMemory;
     }
+    
+    @Override
+    public String toString(){
+        return super.toString() +
+        ", codice IMEI='" + codiceIMEI + "/'" +
+        ", totale memoria=" + availableMemory;
+    }
 }
